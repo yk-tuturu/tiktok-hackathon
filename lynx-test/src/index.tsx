@@ -17,7 +17,7 @@ import { Loading } from './pages/Loading.js';
 root.render(
   <MemoryRouter>
     <Routes>
-      <Route path="/" element={<TextEntry />} />
+      <Route path="/" element={<ImageUpload />} />
       <Route path="/detected" element={<Detected />} />
     </Routes>
   </MemoryRouter>,

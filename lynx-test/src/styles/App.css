@@ -90,8 +90,6 @@ text {
   font-size: 64px;
 }
 
-
-
 .mb-1 {
   margin-bottom: 4px;
 }
@@ -108,7 +106,35 @@ text {
   margin-bottom: 32px;
 }
 
+.mb-5 {
+  margin-bottom: 64px;
+}
+
+.mt-1 {
+  margin-top: 4px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-3 {
+  margin-top: 16px;
+}
+
+.mt-4 {
+  margin-top: 32px;
+}
+
+.mt-5 {
+  margin-top: 64px;
+}
+
 .font-bold {
   font-weight: 800;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
