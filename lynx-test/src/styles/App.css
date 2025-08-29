@@ -1,7 +1,7 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype-variations");
   font-weight: 100 900; /* for variable font range */
   font-style: normal;
 }
@@ -24,16 +24,15 @@
 
 text {
   color: var(--color-text);
-  font-weight: 500;
   font-family: "Roboto";
   text-align: center;
+  font-variation-settings: "wght" 500;
 }
 
 /* classes written by YK, feel free to change */
 /* organized css? what is that */
 .heading-text {
   color: var(--color-primary);
-  font-weight: 700;
   font-family: "Montserrat";
 }
 
@@ -46,7 +45,7 @@ text {
 .safe-area-view {
   width: 100%;
   height: 100%;
-  padding: 50px 20px;
+  padding: 50px 30px;
   font-family: "TTNeoris";
 }
 
@@ -131,10 +130,15 @@ text {
 }
 
 .font-bold {
-  font-weight: 800;
+  font-variation-settings: "wght" 700;
 }
 
+.font-semibold {
+  font-variation-settings: "wght" 500;
+}
+
+
 .font-light {
-  font-weight: 300;
+  font-variation-settings: "wght" 300;
 }
 
