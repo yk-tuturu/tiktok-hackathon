@@ -6,24 +6,14 @@ import { TextButton } from '../components/TextButton.js'
 
 import { SafeAreaView } from '../components/SafeAreaView.js'
 
+// mostly placeholder stuff i was randomly cooking up before
+// @joanne just change it according to your design
 export function TextEntry(props: {
   onRender?: () => void
 }) {
-  const [alterLogo, setAlterLogo] = useState(false)
-
-  useEffect(() => {
-    console.info('Hello, ReactLynx')
-  }, [])
-  props.onRender?.()
-
-  const onTap = useCallback(() => {
-    'background only'
-    setAlterLogo(prevAlterLogo => !prevAlterLogo)
-  }, [])
-
-  const [search, setSearch] = useState("");
+  const [input, setInput] = useState("");
   const handleInput = (event: any) => {
-    setSearch(event.detail.value);
+    setInput(event.detail.value);
   };
 
   return (
