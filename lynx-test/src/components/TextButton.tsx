@@ -2,12 +2,14 @@ import { useCallback, useEffect, useState, useRef } from '@lynx-js/react'
 
 import '../styles/App.css'
 import type { NodesRef } from '@lynx-js/types';
-
+import { uid } from 'uid';
 // normal button 
 export function TextButton(props: {
   onClick: ()=>void,
   text: string
 }) {
+
+  const id = uid(8);
 
   function handleTap() {
     props.onClick()
@@ -16,7 +18,7 @@ export function TextButton(props: {
 
   return (
     <view 
-      id={"button" + props.text}
+      id={"button" + id}
       className="button" 
       style={{width: "fit-content"}}
       bindtap={handleTap}
@@ -28,7 +30,7 @@ export function TextButton(props: {
       bindtouchstart={() => {
           lynx
             .createSelectorQuery()
-            .select("#button" + props.text)
+            .select("#button" + id)
             .setNativeProps({
               'background-color': '#023f63',
             })
@@ -37,7 +39,7 @@ export function TextButton(props: {
       bindtouchend={() => {
           lynx
             .createSelectorQuery()
-            .select("#button" + props.text)
+            .select("#button" + id)
             .setNativeProps({
               'background-color': '#016BA9',
             })

@@ -25,7 +25,6 @@
 text {
   color: var(--color-text);
   font-family: "Roboto";
-  text-align: center;
   font-variation-settings: "wght" 500;
 }
 
@@ -38,7 +37,6 @@ text {
 
 .subtitle-text {
   color: var(--color-text);
-  font-weight: 300;
   font-family: "Roboto";
 }
 
