@@ -2,13 +2,11 @@ import { useCallback, useEffect, useState } from '@lynx-js/react'
 
 
 import '../styles/App.css'
-import arrow from './assets/arrow.png'
-import lynxLogo from './assets/lynx-logo.png'
-import reactLynxLogo from './assets/react-logo.png'
+import { TextButton } from '../components/TextButton.js'
 
 import { SafeAreaView } from '../components/SafeAreaView.js'
 
-export function Home(props: {
+export function TextEntry(props: {
   onRender?: () => void
 }) {
   const [alterLogo, setAlterLogo] = useState(false)
@@ -29,22 +27,25 @@ export function Home(props: {
   };
 
   return (
-      <SafeAreaView>
-        <view>
-        <text className="font-lg mb-2">Upload text</text>
+    <>
+    <SafeAreaView>
+
+        <text className="font-lg font-bold" style={{marginTop: "50px"}}>Upload text</text>
+        <text>Paste your caption here our AI model to detect sensitive information</text>
         <view className="inputWrapper">
-          <input
+          <textarea
           bindinput={handleInput}
           className="inputBox mb-4"
-          placeholder="Search products hee..."
+          placeholder="Paste your xt here"
         />
         </view>
-        <view className="submitButton">
-          <text>Submit</text>
-        </view>
-        
-      </view>
+        <TextButton onClick={()=>{}} text="Submit"></TextButton>
+
+      
       </SafeAreaView>
+      
+    </>
+      
       
 
       

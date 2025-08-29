@@ -3,13 +3,13 @@ import '@lynx-js/react/debug'
 import { root } from '@lynx-js/react'
 import { MemoryRouter, Routes, Route } from 'react-router';
 
-import { Home } from './pages/Home.js'
+import { TextEntry } from './pages/TextEntry.js'
 import {Detected} from "./pages/Detected.js"
 
 root.render(
   <MemoryRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<TextEntry />} />
       <Route path="/detected" element={<Detected />} />
     </Routes>
   </MemoryRouter>,

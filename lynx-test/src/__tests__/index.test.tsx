@@ -5,13 +5,13 @@ import '@testing-library/jest-dom'
 import { expect, test, vi } from 'vitest'
 import { render, getQueriesForElement } from '@lynx-js/react/testing-library'
 
-import { Home } from '../pages/Home.js'
+import { TextEntry } from '../pages/TextEntry.js'
 
 test('App', async () => {
   const cb = vi.fn()
 
   render(
-    <Home
+    <TextEntry
       onRender={() => {
         cb(`__MAIN_THREAD__: ${__MAIN_THREAD__}`)
       }}
