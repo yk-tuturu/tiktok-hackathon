@@ -20,6 +20,11 @@ export function TextButton(props: {
       className="button" 
       style={{width: "fit-content"}}
       bindtap={handleTap}
+      // just wanted a bit of highlight when the user taps the button
+      // not sure if this is the best way to do it 
+      // im just going off lynx docs
+      // selects by id, which i've set to the button+the text inside the button
+      // no unique id guarantee but it'll have to do
       bindtouchstart={() => {
           lynx
             .createSelectorQuery()
