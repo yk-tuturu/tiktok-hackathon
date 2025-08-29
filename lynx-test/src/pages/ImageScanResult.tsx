@@ -11,7 +11,8 @@ export function ImageScanResult(props: {
 }) {
 
   return (
-    <>
-    </>  
+    <SafeAreaView>
+      <text className="heading-text font-bold font-lg">Image Scan Result</text>
+    </SafeAreaView>
   )
 }

@@ -5,10 +5,11 @@ import '../styles/App.css'
 import "../styles/ButtonStyles.css"
 import type { NodesRef } from '@lynx-js/types';
 import { uid } from 'uid';
+
 // normal button 
-export function TextButton(props: {
+export function OutlineButton(props: {
   onClick: ()=>void,
-  text: string,
+  children: React.ReactNode,
   style?: CSSProperties
 }) {
 
@@ -22,7 +23,7 @@ export function TextButton(props: {
   return (
     <view 
       id={"button" + id}
-      className="button" 
+      className="outline-button" 
       style={{width: "fit-content", ...props.style}}
       bindtap={handleTap}
       // just wanted a bit of highlight when the user taps the button
@@ -35,7 +36,7 @@ export function TextButton(props: {
             .createSelectorQuery()
             .select("#button" + id)
             .setNativeProps({
-              'background-color': '#023f63',
+              'background-color': '#b5cce9ff',
             })
             .exec();
         }}
@@ -44,12 +45,12 @@ export function TextButton(props: {
             .createSelectorQuery()
             .select("#button" + id)
             .setNativeProps({
-              'background-color': '#016BA9',
+              'background-color': 'white',
             })
             .exec();
         }}
       >
-        <text className="button-text font-sm">{props.text}</text>
+        {props.children}
     </view>
   )
 }

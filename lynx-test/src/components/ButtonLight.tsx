@@ -1,15 +1,14 @@
 import { useCallback, useEffect, useState, useRef } from '@lynx-js/react'
-import type { CSSProperties } from '@lynx-js/types';
 
 import '../styles/App.css'
 import "../styles/ButtonStyles.css"
 import type { NodesRef } from '@lynx-js/types';
 import { uid } from 'uid';
+
 // normal button 
-export function TextButton(props: {
+export function ButtonLight(props: {
   onClick: ()=>void,
-  text: string,
-  style?: CSSProperties
+  children: React.ReactNode
 }) {
 
   const id = uid(8);
@@ -22,8 +21,7 @@ export function TextButton(props: {
   return (
     <view 
       id={"button" + id}
-      className="button" 
-      style={{width: "fit-content", ...props.style}}
+      className="button-light" 
       bindtap={handleTap}
       // just wanted a bit of highlight when the user taps the button
       // not sure if this is the best way to do it 
@@ -35,7 +33,7 @@ export function TextButton(props: {
             .createSelectorQuery()
             .select("#button" + id)
             .setNativeProps({
-              'background-color': '#023f63',
+              'background-color': '#769bc8ff',
             })
             .exec();
         }}
@@ -44,12 +42,12 @@ export function TextButton(props: {
             .createSelectorQuery()
             .select("#button" + id)
             .setNativeProps({
-              'background-color': '#016BA9',
+              'background-color': '#A5CEFF',
             })
             .exec();
         }}
       >
-        <text className="button-text font-sm">{props.text}</text>
+        {props.children}
     </view>
   )
 }

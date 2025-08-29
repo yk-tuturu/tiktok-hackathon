@@ -58,17 +58,7 @@ text {
   color: rgb(93, 93, 93);
 }
 
-.button {
-  background-color: var(--color-primary);
-  padding: 12px 24px;
-  border-radius: 20px;
-  box-shadow: 0px 8px 19px 0px rgba(0, 0, 0, 0.15);
-}
 
-
-.button-text {
-  color: white;
-}
 
 /* some font size classes for easier styling */
 .font-sm {
@@ -138,5 +128,9 @@ text {
 
 .font-light {
   font-variation-settings: "wght" 300;
+}
+
+.align-center {
+  text-align: center;
 }
 

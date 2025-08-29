@@ -4,7 +4,6 @@ import { root } from '@lynx-js/react'
 import { MemoryRouter, Routes, Route } from 'react-router';
 
 import { TextEntry } from './pages/TextEntry.js'
-import {Detected} from "./pages/Detected.js"
 import { Home } from './pages/Home.js';
 import { TextScanResult } from './pages/TextScanResult.js';
 import { TextCensored } from './pages/TextCensored.js';
@@ -18,7 +17,8 @@ root.render(
   <MemoryRouter>
     <Routes>
       <Route path="/" element={<ImageUpload />} />
-      <Route path="/detected" element={<Detected />} />
+      <Route path="/imageResult" element={<ImageScanResult/>}/>
+
     </Routes>
   </MemoryRouter>,
 );
