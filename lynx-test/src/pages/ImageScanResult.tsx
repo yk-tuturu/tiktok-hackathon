@@ -6,12 +6,13 @@ import { TextButton } from '../components/TextButton.js'
 
 import { SafeAreaView } from '../components/SafeAreaView.js'
 
-export function Home(props: {
+export function ImageScanResult(props: {
 
 }) {
 
   return (
-    <>
-    </>  
+    <SafeAreaView>
+      <text className="heading-text font-bold font-lg">Image Scan Result</text>
+    </SafeAreaView>
   )
 }

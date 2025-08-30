@@ -6,7 +6,7 @@ import { TextButton } from '../components/TextButton.js'
 
 import { SafeAreaView } from '../components/SafeAreaView.js'
 
-export function Home(props: {
+export function ImageCensored(props: {
 
 }) {
 

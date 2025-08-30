@@ -9,7 +9,7 @@ export function SafeAreaView(props: {
   children?: React.ReactNode
 }) {
   return (
-    <view className="app-container center-container">
+    <view className="safe-area-view" style={{alignItems: "center"}}>
         {props.children}
     </view>
   )

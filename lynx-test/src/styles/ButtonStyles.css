@@ -1,0 +1,42 @@
+.button {
+  background-color: var(--color-primary);
+  padding: 12px 24px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 19px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+.button-text {
+  color: white;
+}
+
+.button-light {
+    background-color: #A5CEFF;
+    padding: 16px 24px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 19px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    border: 1px solid var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-light-text {
+    color: #001847;
+}
+
+.outline-button {
+    background-color: white;
+    padding: 8px 24px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 19px 0px rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outline-button-text {
+    color: #001847;
+}
