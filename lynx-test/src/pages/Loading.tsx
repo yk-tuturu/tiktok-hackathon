@@ -23,10 +23,10 @@ export function Loading(props: {
         <view class="spinner"></view> 
         <text className="subtitle-text font-light font-sm mt-5">Your security is our top priority</text>     
         <OutlineButton onClick={()=>{}} style={{marginTop: "64px"}}>
-          <text className="subtitle-text outline-button-text">Cancel</text>
+          <text className="subtitle-text">Cancel</text>
         </OutlineButton>
         <OutlineButton onClick={()=>{nav("/imageResult")}} style={{marginTop: "64px"}}>
-          <text className="subtitle-text outline-button-text">(Debug) Next</text>
+          <text className="subtitle-text">(Debug) Next</text>
         </OutlineButton>
       </view>
     </SafeAreaView> 

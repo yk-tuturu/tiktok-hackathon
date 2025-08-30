@@ -11,6 +11,7 @@ import { ImageUpload } from './pages/ImageUpload.js';
 import { ImageScanResult } from './pages/ImageScanResult.js';
 import { ImageCensored } from './pages/ImageCensored.js';
 import { Loading } from './pages/Loading.js';
+//import SimpleTest from './pages/SimpleTest.js';
 
 // FIX ROUTER LATER!!
 root.render(

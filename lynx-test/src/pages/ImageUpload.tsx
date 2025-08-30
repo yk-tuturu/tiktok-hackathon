@@ -33,7 +33,7 @@ export function ImageUpload(props: {
     <SafeAreaView>
         <view className="align-left-container mt-4">
             <text className="heading-text font-lg font-bold align-left">Scan Your Image</text>
-            <text className="subtitle-text font-light mt-2" style={{fontSize: "18px"}}>Detect faces, documents, and private details in your photos</text>
+            <text className="subtitle-text font-light mt-2 align-left" style={{fontSize: "18px"}}>Detect faces, documents, and private details in your photos</text>
         </view>
         <view className="upload-image-container">
             <image src={pictureIcon} style={{width: "24px", height: "24px"}}></image>
@@ -46,11 +46,13 @@ export function ImageUpload(props: {
         <ButtonLight onClick={()=>{}}>
             <view style={{width:"100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
                 <image src={cameraIcon} style={{width: "16px", height: "16px", marginRight: "8px"}}></image>
-                <text className="button-light-text">Open Camera & Take Photo</text>
+                <text>Open Camera & Take Photo</text>
             </view>
         </ButtonLight>
         <view style={{marginTop: "90px", width: "100%", display: "flex", justifyContent: "center"}}>
-            <TextButton onClick={submitPhoto} text="Proceed to Scan" style={{padding: "16px 24px"}}></TextButton>
+            <TextButton onClick={submitPhoto} style={{padding: "16px 24px"}}>
+                <text>Proceed to Scan</text>
+            </TextButton>
         </view>
         </view>
         

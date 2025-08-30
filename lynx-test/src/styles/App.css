@@ -26,6 +26,7 @@ text {
   color: var(--color-text);
   font-family: "Roboto";
   font-variation-settings: "wght" 500;
+  text-align: center;
 }
 
 /* classes written by YK, feel free to change */
@@ -130,7 +131,7 @@ text {
   font-variation-settings: "wght" 300;
 }
 
-.align-center {
-  text-align: center;
+.align-left {
+  text-align: left;
 }
 

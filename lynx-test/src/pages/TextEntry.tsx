@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from '@lynx-js/react'
 
 
 import '../styles/App.css'
+import "../styles/ButtonStyles.css"
 import { TextButton } from '../components/TextButton.js'
 
 import { SafeAreaView } from '../components/SafeAreaView.js'
@@ -30,7 +31,9 @@ export function TextEntry(props: {
           placeholder="Paste your xt here"
         />
         </view>
-        <TextButton onClick={()=>{}} text="Submit"></TextButton>
+        <TextButton onClick={()=>{}}>
+          <text className="button-text">Submit</text>
+        </TextButton>
 
       
       </SafeAreaView>

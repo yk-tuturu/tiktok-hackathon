@@ -26,8 +26,7 @@ export function ButtonLight(props: {
       // just wanted a bit of highlight when the user taps the button
       // not sure if this is the best way to do it 
       // im just going off lynx docs
-      // selects by id, which i've set to the button+the text inside the button
-      // no unique id guarantee but it'll have to do
+      // selects by id, which i've set to the button+ a unique id
       bindtouchstart={() => {
           lynx
             .createSelectorQuery()
@@ -47,7 +46,10 @@ export function ButtonLight(props: {
             .exec();
         }}
       >
-        {props.children}
+        <view className="button-light-text">
+          {props.children}
+        </view>
+        
     </view>
   )
 }

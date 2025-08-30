@@ -5,10 +5,12 @@ import '../styles/App.css'
 import "../styles/ButtonStyles.css"
 import type { NodesRef } from '@lynx-js/types';
 import { uid } from 'uid';
+
 // normal button 
+// wraps around a child node that may contain text, images, etc
 export function TextButton(props: {
   onClick: ()=>void,
-  text: string,
+  children: React.ReactNode
   style?: CSSProperties
 }) {
 
@@ -28,8 +30,7 @@ export function TextButton(props: {
       // just wanted a bit of highlight when the user taps the button
       // not sure if this is the best way to do it 
       // im just going off lynx docs
-      // selects by id, which i've set to the button+the text inside the button
-      // no unique id guarantee but it'll have to do
+      // selects by id, which i've set to the button+a unique id
       bindtouchstart={() => {
           lynx
             .createSelectorQuery()
@@ -49,7 +50,10 @@ export function TextButton(props: {
             .exec();
         }}
       >
-        <text className="button-text font-sm">{props.text}</text>
+        <view className="button-text">
+          {props.children}
+        </view>
+        
     </view>
   )
 }
